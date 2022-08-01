@@ -67,7 +67,7 @@ a {
 }
 
 .navbar {
-    padding: 4vh;
+    padding: 2%;
 }
 
 .navbar-main {
@@ -77,7 +77,7 @@ a {
 }
 
 .navbar-brand img {
-    width: 12vw;
+    width: 25vh;
 }
 
 .content {
