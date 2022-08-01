@@ -1,0 +1,198 @@
+:root {
+    --c-vista-blue: #7fa5e1;
+    --c-medium-turquoise: #43cabf;
+    --c-screamin-green: #78ff7c;
+    --c-lime-green: #2fee2f;
+    --c-background: #202020;
+    --c-foreground: #ffffff;
+    --c-accent: #64eb95;
+    --c-accent-dark: #33764c;
+
+    --c-background-light: #303030;
+    --c-background-dark: #101010;
+
+    --c-red: #eb6464;
+
+    --gradient: linear-gradient(145deg, rgba(127,165,225,1) 0%, rgba(67,202,191,1) 25%, rgba(120,255,124,1) 91%, rgba(120,255,124,1) 91%, rgba(47,238,47,1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--c-background);
+    color: var(--c-foreground);
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c-background-light); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c-accent); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c-accent-dark); 
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 28px;
+    font-weight: medium;
+}
+
+a {
+    color: var(--c-accent);
+    text-decoration: none;
+}
+
+.btn {
+    background-color: var(--c-accent);
+    color: var(--c-background);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.ic-material {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.btn-small {
+    background-color: var(--c-accent);
+    color: var(--c-background);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 30px;
+    cursor: pointer;
+}
+
+.cardDescription {
+    color: rgb(116, 116, 116);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.btn-thin {
+    color: var(--c-foreground);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.badge-text {
+    background-color: var(--c-vista-blue);
+    background: var(--gradient);
+    color: var(--c-accent-dark);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.api-links {
+    margin: 25px;
+    padding: 25px;
+    padding-bottom: 68px;
+}
+
+.fg-red {
+    color: var(--c-red);
+}
+
+.fg-accent {
+    color: var(--c-accent);
+}
+
+.navbar {
+    padding: 25px;
+}
+
+.navbar-main {
+    display: flex;
+    max-height: 140px;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 250px;
+}
+
+.navbar-btns {
+    position: absolute;
+    right: 25px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-height: 840px;
+    padding-bottom: 68px;
+    text-align: center;
+}
+
+.authCard {
+    background: var(--c-background-light);
+    padding: 48px;
+    width: 30%;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.textInput {
+    background: var(--c-background);
+    padding: 14px;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    border: transparent;
+    color: var(--c-foreground);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--c-background-dark);
+    list-style-type: none;
+    padding: 25px 0;
+}
+
+.footer li {
+    float: left;
+    text-align: center;
+    margin-left: 25px;
+}
